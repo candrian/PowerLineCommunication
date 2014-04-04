@@ -1,0 +1,233 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		DE6D5D9E1556F090000DE342 /* ST7540.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ST7540.h; sourceTree = "<group>"; };
+		DE6D5DA01556F09D000DE342 /* ST7540.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ST7540.c; sourceTree = "<group>"; };
+		DE72B68115F50C0B005933BA /* main_working.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main_working.c; sourceTree = "<group>"; };
+		DEEA1CCE1546CBDF00597093 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DEEA1CCF1546CBDF00597093 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DEEA1CDB1546CC3500597093 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		DEEA1CDC1546CDE600597093 /* spi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spi.h; sourceTree = "<group>"; };
+		DEEA1CDD1546CDED00597093 /* spi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spi.c; sourceTree = "<group>"; };
+		DEEA1CDE1546CEBE00597093 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
+		DEEA1CDF1546CECB00597093 /* uart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DEEA1CC31546CBDE00597093 = {
+			isa = PBXGroup;
+			children = (
+				DEEA1CCD1546CBDF00597093 /* PowerLineCommunication */,
+			);
+			sourceTree = "<group>";
+		};
+		DEEA1CCD1546CBDF00597093 /* PowerLineCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA1CDB1546CC3500597093 /* main.h */,
+				DEEA1CCE1546CBDF00597093 /* main.c */,
+				DE72B68115F50C0B005933BA /* main_working.c */,
+				DE6D5D9E1556F090000DE342 /* ST7540.h */,
+				DE6D5DA01556F09D000DE342 /* ST7540.c */,
+				DEEA1CDC1546CDE600597093 /* spi.h */,
+				DEEA1CDD1546CDED00597093 /* spi.c */,
+				DEEA1CDF1546CECB00597093 /* uart.h */,
+				DEEA1CDE1546CEBE00597093 /* uart.c */,
+				DEEA1CCF1546CBDF00597093 /* Makefile */,
+			);
+			path = PowerLineCommunication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		DEEA1CCA1546CBDF00597093 /* build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "all -C $(PROJECT)";
+			buildConfigurationList = DEEA1CD21546CBDF00597093 /* Build configuration list for PBXLegacyTarget "build" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = build;
+			passBuildSettingsInEnvironment = 1;
+			productName = build;
+		};
+		DEEA1CCB1546CBDF00597093 /* fuse */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "fuse -C $(PROJECT)";
+			buildConfigurationList = DEEA1CD51546CBDF00597093 /* Build configuration list for PBXLegacyTarget "fuse" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = fuse;
+			passBuildSettingsInEnvironment = 1;
+			productName = fuse;
+		};
+		DEEA1CCC1546CBDF00597093 /* flash */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "flash -C $(PROJECT)";
+			buildConfigurationList = DEEA1CD81546CBDF00597093 /* Build configuration list for PBXLegacyTarget "flash" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = flash;
+			passBuildSettingsInEnvironment = 1;
+			productName = flash;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		DEEA1CC51546CBDE00597093 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DEEA1CC81546CBDE00597093 /* Build configuration list for PBXProject "PowerLineCommunication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEEA1CC31546CBDE00597093;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEEA1CCA1546CBDF00597093 /* build */,
+				DEEA1CCB1546CBDF00597093 /* fuse */,
+				DEEA1CCC1546CBDF00597093 /* flash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		DEEA1CD01546CBDF00597093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(PATH):/usr/local/CrossPack-AVR/bin";
+			};
+			name = Debug;
+		};
+		DEEA1CD11546CBDF00597093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(PATH):/usr/local/CrossPack-AVR/bin";
+			};
+			name = Release;
+		};
+		DEEA1CD31546CBDF00597093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEEA1CD41546CBDF00597093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEEA1CD61546CBDF00597093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DEEA1CD71546CBDF00597093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DEEA1CD91546CBDF00597093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DEEA1CDA1546CBDF00597093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEEA1CC81546CBDE00597093 /* Build configuration list for PBXProject "PowerLineCommunication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEA1CD01546CBDF00597093 /* Debug */,
+				DEEA1CD11546CBDF00597093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEEA1CD21546CBDF00597093 /* Build configuration list for PBXLegacyTarget "build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEA1CD31546CBDF00597093 /* Debug */,
+				DEEA1CD41546CBDF00597093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEEA1CD51546CBDF00597093 /* Build configuration list for PBXLegacyTarget "fuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEA1CD61546CBDF00597093 /* Debug */,
+				DEEA1CD71546CBDF00597093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEEA1CD81546CBDF00597093 /* Build configuration list for PBXLegacyTarget "flash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEA1CD91546CBDF00597093 /* Debug */,
+				DEEA1CDA1546CBDF00597093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEEA1CC51546CBDE00597093 /* Project object */;
+}
