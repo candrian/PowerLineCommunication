@@ -1,0 +1,228 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		DECE73FB15FB3808008D6269 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DECE73FC15FB3808008D6269 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DECE740815FB383A008D6269 /* spi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spi.c; sourceTree = "<group>"; };
+		DECE740915FB384D008D6269 /* spi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spi.h; sourceTree = "<group>"; };
+		DECE740A15FB385D008D6269 /* ST7540.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ST7540.c; sourceTree = "<group>"; };
+		DECE740B15FB386D008D6269 /* ST7540.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ST7540.h; sourceTree = "<group>"; };
+		DECE740C15FB3881008D6269 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		DECE740D15FB38CC008D6269 /* uart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
+		DECE740E15FB38DF008D6269 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DECE73F015FB3808008D6269 = {
+			isa = PBXGroup;
+			children = (
+				DECE73FA15FB3808008D6269 /* PowerLineCommunication_Receive */,
+			);
+			sourceTree = "<group>";
+		};
+		DECE73FA15FB3808008D6269 /* PowerLineCommunication_Receive */ = {
+			isa = PBXGroup;
+			children = (
+				DECE73FC15FB3808008D6269 /* Makefile */,
+				DECE73FB15FB3808008D6269 /* main.c */,
+				DECE740C15FB3881008D6269 /* main.h */,
+				DECE740815FB383A008D6269 /* spi.c */,
+				DECE740915FB384D008D6269 /* spi.h */,
+				DECE740A15FB385D008D6269 /* ST7540.c */,
+				DECE740B15FB386D008D6269 /* ST7540.h */,
+				DECE740E15FB38DF008D6269 /* uart.c */,
+				DECE740D15FB38CC008D6269 /* uart.h */,
+			);
+			path = PowerLineCommunication_Receive;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		DECE73F715FB3808008D6269 /* build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "all -C $(PROJECT)";
+			buildConfigurationList = DECE73FF15FB3808008D6269 /* Build configuration list for PBXLegacyTarget "build" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = build;
+			passBuildSettingsInEnvironment = 1;
+			productName = build;
+		};
+		DECE73F815FB3808008D6269 /* fuse */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "fuse -C $(PROJECT)";
+			buildConfigurationList = DECE740215FB3808008D6269 /* Build configuration list for PBXLegacyTarget "fuse" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = fuse;
+			passBuildSettingsInEnvironment = 1;
+			productName = fuse;
+		};
+		DECE73F915FB3808008D6269 /* flash */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "flash -C $(PROJECT)";
+			buildConfigurationList = DECE740515FB3808008D6269 /* Build configuration list for PBXLegacyTarget "flash" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = flash;
+			passBuildSettingsInEnvironment = 1;
+			productName = flash;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		DECE73F215FB3808008D6269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DECE73F515FB3808008D6269 /* Build configuration list for PBXProject "PowerLineCommunication_Receive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DECE73F015FB3808008D6269;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DECE73F715FB3808008D6269 /* build */,
+				DECE73F815FB3808008D6269 /* fuse */,
+				DECE73F915FB3808008D6269 /* flash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		DECE73FD15FB3808008D6269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(PATH):/usr/local/CrossPack-AVR/bin";
+			};
+			name = Debug;
+		};
+		DECE73FE15FB3808008D6269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(PATH):/usr/local/CrossPack-AVR/bin";
+			};
+			name = Release;
+		};
+		DECE740015FB3808008D6269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DECE740115FB3808008D6269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DECE740315FB3808008D6269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DECE740415FB3808008D6269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DECE740615FB3808008D6269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DECE740715FB3808008D6269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DECE73F515FB3808008D6269 /* Build configuration list for PBXProject "PowerLineCommunication_Receive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECE73FD15FB3808008D6269 /* Debug */,
+				DECE73FE15FB3808008D6269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DECE73FF15FB3808008D6269 /* Build configuration list for PBXLegacyTarget "build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECE740015FB3808008D6269 /* Debug */,
+				DECE740115FB3808008D6269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DECE740215FB3808008D6269 /* Build configuration list for PBXLegacyTarget "fuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECE740315FB3808008D6269 /* Debug */,
+				DECE740415FB3808008D6269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DECE740515FB3808008D6269 /* Build configuration list for PBXLegacyTarget "flash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECE740615FB3808008D6269 /* Debug */,
+				DECE740715FB3808008D6269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DECE73F215FB3808008D6269 /* Project object */;
+}
